@@ -1,0 +1,27 @@
+.nav-wrapper {
+
+    background-image: linear-gradient(to right, #89fdfd,#90b083, #f75f07); 
+}
+.nav li a {
+    color: #e70c0c; 
+  }
+  
+  
+  
+  .sidenav {
+    background-color: #35c2e6;
+  }
+  .sidenav a {
+    color: rgb(255, 255, 255);
+  }
+  .sidenav a i {
+    color: rgb(0, 0, 0);
+  }
+    
+  .brand-logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 60px;
+    margin-left: 80px;
+  }
+ 

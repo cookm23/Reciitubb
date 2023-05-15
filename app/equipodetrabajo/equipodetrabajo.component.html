@@ -1,0 +1,27 @@
+<br><br>
+<br><br>
+
+
+
+<section id="equipo">
+    <h1 class="center align" ngClass="titulo1">Equipo de Trabajo</h1> 
+   <img src="../../assets/img/gif1.gif" alt="" class="left align">
+    <section class="team-members">
+        <div class="member-card" *ngFor="let member of teamMembers" [style.background-image]="'url(' + member.imageUrl + ')'">
+          <div class="member-details">
+            <h2 class="member-name">{{ member.name }}</h2>
+            <p class="member-role">{{ member.role }}</p>
+            <div class="social-links">
+              <a href="{{ member.facebookUrl }}" class="facebook-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="{{ member.instagramUrl }}" class="instagram-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h1 ngClass="titulo2">Contactanos via WhatsApp</h1>
+      <div class="contact center align"  >
+        <img src="../../assets/img/whats3.jfif" alt="Código de WhatsApp" >
+      </div>
+</section><br><br>
+<br><br>
+

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Recitub♻️</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-******************" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+
+   
+
+  <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.sidenav');
+   var instances = M.Sidenav.init(elems);
+   var titulo = document.getElementById('titulo');
+    titulo.addEventListener('dblclick', function() {
+    titulo.style.display = 'none';
+     });
+
+    });
+
+    $(document).ready(function() {
+  const form = $('form');
+
+  form.on('submit', function(event) {
+    event.preventDefault();
+    form.addClass('shake');
+    setTimeout(function() {
+      form.removeClass('shake');
+      form[0].reset(); // Borra el contenido del formulario
+    }, 500);
+  });
+});
+
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });
+
+  $(document).ready(function(){
+  $('.sidenav').sidenav(); // activar sidenav
+  $('#slide-out li a').click(function(){
+    $('.sidenav').sidenav('close'); // cerrar sidenav
+    if($(this).attr('href') === '#inicio'){ // verificar si se ha seleccionado el enlace "Inicio"
+      $('.sidenav').sidenav('close'); // cerrar sidenav
+    }
+  });
+});
+ 
+
+  </script>
+ 
+ 
+  
+  <style>
+    body {
+      background-image: url("assets/img/33797wide.jpg");
+      background-size: cover;
+    }
+  </style> 
+
+</head>
+
+
+<body>
+  
+  <app-navbar></app-navbar>
+  <app-header></app-header>
+  <app-misionyvision></app-misionyvision>
+  <app-quehacemos></app-quehacemos>
+  <app-equipodetrabajo></app-equipodetrabajo>
+  <!--app-formulario></app-formulario-->
+  <app-footer></app-footer>
+  
+
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDw5BYtJv0GbfcpKHRFj8CJPao4i1TgHTs",
+    authDomain: "reciitub.firebaseapp.com",
+    projectId: "reciitub",
+    storageBucket: "reciitub.appspot.com",
+    messagingSenderId: "751949814387",
+    appId: "1:751949814387:web:56be1503e08054e329a806",
+    measurementId: "G-35BLC6PT0Q"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: titulo1;
+    src: url(../../assets/fonts/SuperMario256.ttf);
+}
+
+.titulo1{
+    font-family: "titulo1";
+    color: rgb(240, 12, 12);
+}
+
+@font-face {
+    font-family: titulo2;
+    src: url(../../assets/fonts/sunshineformulaDEMO.otf);
+}
+.titulo2{
+    font-family: "titulo2";
+    color: rgb(245, 238, 238);
+}   
+
+#mision {
+    background: url('../../assets/img/header1.jpg') no-repeat center center fixed;
+    background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  filter: brightness(0.5);
+  }
